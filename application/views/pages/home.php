@@ -1,4 +1,4 @@
 <h2><?= $title ?></h2>
 <p>Welcome to the ciBlog application.</p>
-<button type="button" class="btn btn-outline-info">Login</button>
-<button type="button" class="btn btn-outline-info">Registreren</button>
+<input type="button" class="btn btn-outline-info" value="Login" onclick="window.location.href='<?php echo base_url(); ?>login'" />
+<input type="button" class="btn btn-outline-info" value="Registreren" onclick="window.location.href='<?php echo base_url(); ?>registreren'" />
