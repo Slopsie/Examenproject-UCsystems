@@ -2,6 +2,7 @@
 	<head>
 		<title>CiBlog</title>
 		<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css"
 	</head>
 	<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -16,13 +17,10 @@
         <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">Features</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>posts">Posts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/about">About</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
