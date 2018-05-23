@@ -2,7 +2,9 @@
 	<head>
 		<title>UC-Systems AlertTool</title>
 		<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css"
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,12 +37,7 @@
         <a class="nav-link" href="<?php echo base_url(); ?>registreren">Registreren</a>
       </li>
   </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
 <div class='container'>
-	
