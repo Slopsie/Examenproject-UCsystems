@@ -31,13 +31,17 @@
         <a class="nav-link" href="<?php echo base_url(); ?>tickets">Tickets</a>
       </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>login">Login</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login</a>
       </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>registreren">Registreren</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>users/register">Registreren</a>
       </li>
   </ul>
   </div>
 </nav>
 
 <div class='container'>
+  <!-- Flash messages -->
+  <?php if($this->session->flashdata('user_registered')): ?>
+    <?php echo '<p class="alert alert-succes">'.$this->session->flashdata('user_registered').'</p>'; ?>
+  <?php endif; ?>
