@@ -1,12 +1,20 @@
 <?php
 	class users extends CI_CONTROLLER{
+<<<<<<< HEAD
 		//Register user
+=======
+>>>>>>> 9495bd2f6ccc84d3ed28d3d0b73361066f9205ab
 		public function register(){
 			$data['title'] = 'Sign Up';
 
 			$this->form_validation->set_rules('name', 'Name', 'required');
+<<<<<<< HEAD
 			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
 			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
+=======
+			$this->form_validation->set_rules('username', 'Username', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required');
+>>>>>>> 9495bd2f6ccc84d3ed28d3d0b73361066f9205ab
 			$this->form_validation->set_rules('password', 'Password', 'required');
 			$this->form_validation->set_rules('password2', 'Confirm Password', 'matches[password]');
 
@@ -26,6 +34,7 @@
 				redirect('posts');
 			}
 		}
+<<<<<<< HEAD
 				//Log in user
 				public function login(){
 			$data['title'] = 'Sign In';
@@ -82,4 +91,6 @@
 				return false;
 			}
 		}
+=======
+>>>>>>> 9495bd2f6ccc84d3ed28d3d0b73361066f9205ab
 	}

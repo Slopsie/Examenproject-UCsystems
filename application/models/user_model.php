@@ -14,6 +14,7 @@
 			return $this->db->insert('users', $data);
 
 		}
+<<<<<<< HEAD
 
 		// Check username exists
 		public function check_username_exists($username){
@@ -33,4 +34,6 @@
 				return false;
 			}
 		}
+=======
+>>>>>>> 9495bd2f6ccc84d3ed28d3d0b73361066f9205ab
 	}
