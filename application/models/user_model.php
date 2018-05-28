@@ -14,6 +14,7 @@
 			return $this->db->insert('users', $data);
 
 		}
+<<<<<<< HEAD
 
 		//Log user in
 		public function login($username, $password){
@@ -32,6 +33,11 @@
 
 
 		//Check username exists
+=======
+<<<<<<< HEAD
+
+		// Check username exists
+>>>>>>> d4dd48c5640d0d1515f3406dc2a3781ab9794742
 		public function check_username_exists($username){
 			$query = $this->db->get_where('users', array('username' => $username));
 			if(empty($query->row_array())){
@@ -49,4 +55,9 @@
 				return false;
 			}
 		}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9495bd2f6ccc84d3ed28d3d0b73361066f9205ab
+>>>>>>> d4dd48c5640d0d1515f3406dc2a3781ab9794742
 	}
