@@ -9,4 +9,10 @@
 			$this->load->view('posts/index', $data);
 			$this->load->view('templates/footer');
 		}
+		public function create(){
+			//Check login
+			if(!$this->session->userdata('logged-in')){
+				redirect('users/login');
+			}
+		}
 	}
