@@ -16,6 +16,10 @@
 		}
 
 		//Log user in
+<<<<<<< HEAD
+=======
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
 		public function login($username, $password){
 			//Validate
 			$this->db->where('username', $username);
@@ -30,8 +34,13 @@
 			}
 		}
 
+<<<<<<< HEAD
 
 		//Check username exists
+=======
+		// Check username exists
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
 		public function check_username_exists($username){
 			$query = $this->db->get_where('users', array('username' => $username));
 			if(empty($query->row_array())){
@@ -49,4 +58,8 @@
 				return false;
 			}
 		}
+<<<<<<< HEAD
 	}
+=======
+} 
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864

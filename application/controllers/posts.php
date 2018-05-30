@@ -15,6 +15,15 @@
 			$this->load->view('templates/footer');
 		}
 		public function create(){
+<<<<<<< HEAD
 
 	}
 }
+=======
+			//Check login
+			if(!$this->session->userdata('logged-in')){
+				redirect('users/login');
+			}
+		}
+	}
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
