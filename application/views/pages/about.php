@@ -1,2 +1,2 @@
 <h2><?= $title ?></h2>
-<p>De UC-Systems Alert Tool...</p>
+<p>Information about the UCalert tool coming soon!</p>
