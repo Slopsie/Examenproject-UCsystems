@@ -1,12 +1,12 @@
 <html>
-	<head>
-		<title>UC-Systems AlertTool</title>
-		<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+  <head>
+    <title>UC-Systems AlertTool</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-	<body>
+  </head>
+  <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="<?php echo base_url(); ?>">UC-Systems</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
