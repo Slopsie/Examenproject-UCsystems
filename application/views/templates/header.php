@@ -37,7 +37,22 @@
         <a class="nav-link" href="<?php echo base_url(); ?>tickets">Tickets</a>
       </li>
     <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Logout</a>
+=======
+<<<<<<< HEAD
+        <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Logout</a>
+=======
+
+        <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Logout</a>
+
+        <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>users/register">Registreren</a>
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
       </li>
         <?php endif; ?>
   </ul>
@@ -48,6 +63,13 @@
   <!-- Flash messages -->
   <?php if($this->session->flashdata('user_registered')): ?>
     <?php echo '<p class="alert alert-succes">'.$this->session->flashdata('user_registered').'</p>'; ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
   <?php endif; ?>
 
   <?php if($this->session->flashdata('login_failed')): ?>
@@ -60,4 +82,11 @@
 
   <?php if($this->session->flashdata('user_loggedout')): ?>
     <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedout').'</p>'; ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
   <?php endif; ?>

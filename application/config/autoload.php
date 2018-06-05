@@ -132,4 +132,8 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
+<<<<<<< HEAD
 $autoload['model'] = array('post_model', 'user_model', 'ticket_model');
+=======
+$autoload['model'] = array('post_model', 'user_model');
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a

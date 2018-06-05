@@ -14,4 +14,20 @@
 			$this->load->view('posts/index', $data);
 			$this->load->view('templates/footer');
 		}
+<<<<<<< HEAD
 }
+=======
+		public function create(){
+<<<<<<< HEAD
+
+	}
+}
+=======
+			//Check login
+			if(!$this->session->userdata('logged-in')){
+				redirect('users/login');
+			}
+		}
+	}
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a

@@ -1,12 +1,40 @@
 <?php
 	class users extends CI_CONTROLLER{
+<<<<<<< HEAD
 		//Register user
+=======
+<<<<<<< HEAD
+		//Register user
+=======
+
+		//Register user
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
 		public function register(){
 			$data['title'] = 'Sign Up';
 
 			$this->form_validation->set_rules('name', 'Name', 'required');
+<<<<<<< HEAD
 			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
 			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
+=======
+<<<<<<< HEAD
+			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
+			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
+=======
+
+			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
+			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
+
+			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
+			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
+
+			$this->form_validation->set_rules('username', 'Username', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required');
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
 			$this->form_validation->set_rules('password', 'Password', 'required');
 			$this->form_validation->set_rules('password2', 'Confirm Password', 'matches[password]');
 
@@ -23,9 +51,22 @@
 				//set message
 				$this->session->set_flashdata('user_registered', 'You are now registered and can log in');
 
+<<<<<<< HEAD
 				redirect('home');
 			}
 		}
+=======
+<<<<<<< HEAD
+				redirect('home');
+			}
+		}
+=======
+				redirect('posts');
+			}
+		}
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
 				//Log in user
 				public function login(){
 			$data['title'] = 'Sign In';
@@ -49,6 +90,13 @@
 
 				if($user_id){
 					//Create session
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
 					$user_data = array('user_id' => $user_id, 'username' => $username, 'logged_in' => true);
 
 					$this->session->set_userdata($user_data);
@@ -89,8 +137,18 @@
 				return false;
 			}
 		}
+<<<<<<< HEAD
 
 				// Check if email exists
+=======
+<<<<<<< HEAD
+
+				// Check if email exists
+=======
+				// Check if email exists
+
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
 		public function check_email_exists($email){
 			$this->form_validation->set_message('check_email_exists', 'That email is taken. Please choose a different one.');
 			if($this->user_model->check_email_exists($email)){
@@ -99,4 +157,13 @@
 				return false;
 			}
 		}
+<<<<<<< HEAD
 	}
+=======
+<<<<<<< HEAD
+	}
+=======
+
+	}
+>>>>>>> 423f7086fa50a46fdd4add78b0f7ae3f2ff6c864
+>>>>>>> 8edbbc3dfaa9ae1687d1be8fa5c572cde3f0332a
