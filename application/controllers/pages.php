@@ -5,6 +5,11 @@
 				show_404();
 
 			}
+									//Check login
+				if(!$this->session->userdata('logged_in')){
+                	redirect('users/login');
+        }
+
 
 			$data['title'] = ucfirst($page);
 
