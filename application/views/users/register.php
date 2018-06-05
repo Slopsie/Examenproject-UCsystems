@@ -1,5 +1,3 @@
-<?php echo validation_errors(); ?>
-
 <?php echo form_open('users/register'); ?>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
@@ -31,4 +29,3 @@
 			<button type ="submit" class ="btn btn-primary">Submit</button>
 		</div>
 	</div>
-<?php echo form_close(); ?>
