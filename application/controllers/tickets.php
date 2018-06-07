@@ -1,22 +1,22 @@
 <?php
-    class tickets extends CI_controller{
-        public function index(){
-            $data['title'] = 'Tickets';
+	class tickets extends CI_controller{
+		public function index(){
+			$data['title'] = 'Tickets';
 
-            $data['tickets'] = $this->ticket_model->get_tickets();
+			$data['tickets'] = $this->ticket_model->get_tickets();
 
-            //Controleert of de gebruiker ingelogd is
-            if(!$this->session->userdata('logged_in')){
+			//Controleert of de gebruiker ingelogd is
+			if(!$this->session->userdata('logged_in')){
                 redirect('users/login');
         }
 
-            $this->load->view('templates/header');
-            $this->load->view('tickets/index', $data);
-            $this->load->view('templates/footer');
-        }
+			$this->load->view('templates/header');
+			$this->load->view('tickets/index', $data);
+			$this->load->view('templates/footer');
+		}
 
-        public function view($slug = NULL){
-            $data['title'] = $data['ticket']['title'];
+		public function view($slug = NULL){
+			$data['title'] = $data['ticket']['title'];
 
             $data['ticket'] = $this->ticket_model->get_tickets($slug);
             if(empty($data['ticket'])){
@@ -28,8 +28,8 @@
             $this->load->view('templates/footer');
         }  
  
-        public function statistics(){  
-            $data = $this->ticket_model->get_creation_date(); 
+    	public function statistics(){  
+         	$data = $this->ticket_model->get_creation_date(); 
   
         $responce->cols[] = array( 
             "id" => "", 
@@ -56,8 +56,8 @@
  
         echo json_encode($responce);
 
-            $this->load->view('templates/header');
-            $this->load->view('tickets/ticket_view');
-            $this->load->view('templates/footer'); 
+        	$this->load->view('templates/header');
+			$this->load->view('tickets/ticket_view');
+			$this->load->view('templates/footer'); 
         } 
     }

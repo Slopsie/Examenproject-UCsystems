@@ -12,12 +12,12 @@
   </thead>
   <tbody>
  	<?php foreach($tickets as $ticket) { ?>
-      <tr class="table-active">
-        <th scope="row">Active</th>
-        <td><?php echo $ticket['subject']; ?></td>
-        <td><?php echo $ticket['body']; ?></td>
-        <td><?php echo $ticket['received_at']; ?></td>
-      </tr>
-  <?php } ?>
+	    <tr class="table-active">
+	      <th scope="row">Active</th>
+	      <td><?php echo $ticket['subject']; ?></td>
+	      <td><?php echo $ticket['body']; ?></td>
+	      <td><?php echo $ticket['received_at']; ?></td>
+	    </tr>
+	<?php } ?>
   </tbody>
 </table>

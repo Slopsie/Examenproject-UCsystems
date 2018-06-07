@@ -33,7 +33,7 @@
                     "f" => null 
                  )  , 
                  array( 
-                     "v" => (int)$cd->id, 
+                     "v" => (int)$cd->received_at, 
                     "f" => null 
                  ) 
             ); 

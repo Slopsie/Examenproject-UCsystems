@@ -37,7 +37,7 @@ h1 {
  
   <body> 
     <!--Div that will hold the pie chart--> 
-    <h1>Quantity of fruits we have in our store - Displayed by Google Chart and Codeigniter with MySQL</h1> 
+    <h1>Quantity of tickets on specific dates</h1> 
     <div id="chart_div"></div> 
   </body> 
 </html>
