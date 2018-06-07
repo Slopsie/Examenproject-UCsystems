@@ -6,7 +6,7 @@ $route['posts'] = 'posts/index';
 $route['tickets'] = 'tickets/index';
 
 $route['statistics'] = 'statistics/index';
-//$route['tickets/(:any)'] = 'tickets/view/$1'; //verwijder dit nog niet... dit is een tijdelijke fix om die pagina even te zien
+$route['tickets/(:any)'] = 'tickets/view/$1'; //verwijder dit nog niet... dit is een tijdelijke fix om die pagina even te zien
 
 $route['default_controller'] = 'pages/view';
 

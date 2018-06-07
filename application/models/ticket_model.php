@@ -2,7 +2,7 @@
 	class ticket_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
-			 parent::__construct(); 
+	 		parent::__construct(); 
 
 		}
 
@@ -16,10 +16,11 @@
 			return $query->row_array();
 		}
   
-    //get received ticket data 
+    get received ticket data 
     public function get_ticket_data() 
     {  
         $query = $this->db->get('tickets');
 		return $query->result();
 	}
 }
+	}
