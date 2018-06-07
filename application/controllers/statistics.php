@@ -1,11 +1,11 @@
 <?php 
-	class statistics extends CI_controller{
-		public function index(){
+    class statistics extends CI_controller{
+        public function index(){
 
-			$this->load->view('templates/header');
-			$this->load->view('statistics/index');
-			$this->load->view('templates/footer');
-		}
+            $this->load->view('templates/header');
+            $this->load->view('statistics/index');
+            $this->load->view('templates/footer');
+        }
 
     public function getdata() 
         { 
