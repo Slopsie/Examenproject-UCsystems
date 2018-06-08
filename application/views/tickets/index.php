@@ -4,8 +4,13 @@
 
   <thead>
     <tr>
+<<<<<<< HEAD
 <!--       <th scope="col">Resolved</th>
  -->      <th scope="col">Subject</th>
+=======
+      <th scope="col">Resolved</th>
+      <th scope="col">Subject</th>
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
       <th scope="col"></th>
       <th scope="col">Received at</th>
     </tr>
@@ -20,4 +25,8 @@
 	    </tr>
 	<?php } ?>
   </tbody>
+<<<<<<< HEAD
 </table>
+=======
+</table>
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045

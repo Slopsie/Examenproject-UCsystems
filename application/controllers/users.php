@@ -1,6 +1,10 @@
 <?php
 	class users extends CI_CONTROLLER{
+<<<<<<< HEAD
 		//Gives user opportunity to register a account
+=======
+		//Register user
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 		public function register(){
 			$data['title'] = 'Sign Up';
 
@@ -15,18 +19,30 @@
 				$this->load->view('users/register', $data);
 				$this->load->view('templates/footer');
 			} else {
+<<<<<<< HEAD
 				// Encrypts the password
+=======
+				// Encrypt password
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 				$enc_password = md5($this->input->post('password'));
 
 				$this->user_model->register($enc_password);
 
+<<<<<<< HEAD
 				//sets the message that shows when registered
+=======
+				//set message
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 				$this->session->set_flashdata('user_registered', 'You are now registered and can log in');
 
 				redirect('home');
 			}
 		}
+<<<<<<< HEAD
 				//Gives user option to log in.
+=======
+				//Log in user
+>>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 				public function login(){
 			$data['title'] = 'Sign In';
 
