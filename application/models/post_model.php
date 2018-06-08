@@ -3,7 +3,7 @@
 		public function __construct(){
 			$this->load->database();
 		}
-
+		//retrieves all posts from db
 		public function get_posts($slug = FALSE){
 			if($slug === FALSE){
 				$query = $this->db->get('posts');
