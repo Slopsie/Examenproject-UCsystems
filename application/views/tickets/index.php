@@ -24,7 +24,7 @@
 <hr>
 <h3>Add Comment</h3>
 <?php echo validation_errors(); ?>
-<?php echo form_open('comments/create'. $ticket['id']); ?>
+<?php echo form_open('comments/'. $ticket['id']); ?>
   <div class="form-group">
       <label>Name</label>
       <input type="text" name="name" class="form-control">

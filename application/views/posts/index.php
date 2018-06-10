@@ -3,5 +3,5 @@
 		<h3><?php echo $post['title']; ?></h3>
 		<small class = "post-date">Posted on: <?php echo $post['created_at']; ?></small><br>
 		<?php echo $post['body']; ?>
-		<p><a href ="<?php echo site_url('/posts/'.$post['slug']); ?>"></a>Read More</p>
+		<p><a href ="<?php echo site_url('/posts/'.$post['slug']); ?>"></a></p>
 	<?php endforeach; ?>
