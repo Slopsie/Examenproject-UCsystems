@@ -31,11 +31,7 @@
 		}
 
 
-<<<<<<< HEAD
 		//Check if username exists
-=======
-		//Check username exists
->>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 		public function check_username_exists($username){
 			$query = $this->db->get_where('users', array('username' => $username));
 			if(empty($query->row_array())){
@@ -44,11 +40,7 @@
 				return false;
 			}
 		}
-<<<<<<< HEAD
 				// Check if email exists
-=======
-				// Check email exists
->>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
 		public function check_email_exists($email){
 			$query = $this->db->get_where('users', array('email' => $email));
 			if(empty($query->row_array())){

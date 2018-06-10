@@ -4,13 +4,8 @@
 
   <thead>
     <tr>
-<<<<<<< HEAD
 <!--       <th scope="col">Resolved</th>
  -->      <th scope="col">Subject</th>
-=======
-      <th scope="col">Resolved</th>
-      <th scope="col">Subject</th>
->>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
       <th scope="col"></th>
       <th scope="col">Received at</th>
     </tr>
@@ -25,8 +20,23 @@
 	    </tr>
 	<?php } ?>
   </tbody>
-<<<<<<< HEAD
 </table>
-=======
-</table>
->>>>>>> a9d4500db900b807681310d387ea04ae36ca6045
+<hr>
+<h3>Add Comment</h3>
+<?php echo validation_errors(); ?>
+<?php echo form_open('comments/create'. $ticket['id']); ?>
+  <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control">
+  </div>
+  <div class="form-group">
+      <label>Email</label>
+      <input type="text" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+      <label>Body</label>
+      <textarea name="body" class="form-control"></textarea>
+  </div>
+  <input type="hidden" name="slug" value="<?php echo $ticket['slug']; ?>">
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
