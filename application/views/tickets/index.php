@@ -17,6 +17,7 @@
 	      <td><?php echo $ticket['subject']; ?></td>
 	      <td><?php echo $ticket['body']; ?></td>
 	      <td><?php echo $ticket['received_at']; ?></td>
+        <td><class="btn btn-default" href ="<?php echo site_url('/tickets/'.$ticket['slug']); ?>">Comment</class="btn></td>
 	    </tr>
 	<?php } ?>
   </tbody>
