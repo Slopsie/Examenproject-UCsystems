@@ -18,6 +18,9 @@
 		public function view($slug = NULL){
 
             $data['tickets'] = $this->ticket_model->get_tickets($slug);
+            $post_id = $data['tickets']['id'];
+            $data['comments'] = $this->comment_model->get_comments($post_id);
+ 
             if(empty($data['tickets'])){
                 show_404();
             }
