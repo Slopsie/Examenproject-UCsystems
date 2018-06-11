@@ -1,5 +1,5 @@
-<h2><?php echo $ticket['title']; ?></h2>
-<small class = "post-date">Posted on: <?php echo $ticket['created_at']; ?></small><br>
+<h2><?php echo $tickets['subject']; ?></h2>
+<small class = "received-date">received on: <?php echo $tickets['received_at']; ?></small><br>
 <div class ="post-body">
-	<?php echo $ticket['body']; ?>
+	<?php echo $tickets['body']; ?>
 </div>

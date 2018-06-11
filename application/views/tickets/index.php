@@ -1,4 +1,4 @@
-<h2><?= $title ?></h2>
+<h2><?= $subject ?></h2>
 
 <table class="table table-hover">
 
@@ -17,7 +17,7 @@
 	      <td><?php echo $ticket['subject']; ?></td>
 	      <td><?php echo $ticket['body']; ?></td>
 	      <td><?php echo $ticket['received_at']; ?></td>
-        <td><class="btn btn-default" href ="<?php echo site_url('/tickets/'.$ticket['slug']); ?>">Comment</class="btn></td>
+        <td><a class="btn btn-default" href ="<?php echo site_url('/tickets/'.$ticket['slug']); ?>">Comment</a></td>
 	    </tr>
 	<?php } ?>
   </tbody>
