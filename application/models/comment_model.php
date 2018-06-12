@@ -7,8 +7,7 @@
 		public function create_comment($post_id){
 			$data = array(
 				'post_id' => $post_id,
-				'name' => $this->input->post('name'),
-				'email' => $this->input->post('email'),
+				'name' => $this->session->username,
 				'body' => $this->input->post('body'),
 		);
 
