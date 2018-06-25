@@ -5,7 +5,7 @@
 			 parent::__construct(); 
 
 		}
-
+		//retrieves tickets from db
 		public function get_tickets($slug = FALSE){
 			if($slug === FALSE){
 				$query = $this->db->get('tickets');

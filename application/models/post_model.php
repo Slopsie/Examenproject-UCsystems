@@ -9,7 +9,7 @@
 				$query = $this->db->get('posts');
 				return $query->result_array();
 			}
-
+			//retrieves posts from db
 			$query = $this->db->get_where('posts', array('slug' => $slug));
 			return $query->row_array();
 		}

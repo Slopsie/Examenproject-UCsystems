@@ -3,19 +3,19 @@
 		public function __construct(){
 			$this->load->database();
 		}
-
-		public function create_comment($post_id){
+		//sets different values
+		public function create_comment($ticket_id){
 			$data = array(
-				'post_id' => $post_id,
+				'ticket_id' => $ticket_id,
 				'name' => $this->session->username,
 				'body' => $this->input->post('body'),
 		);
 
 			return $this->db->insert('comments', $data);
 		}
-
-		public function get_comments($post_id){
-			$query = $this->db->get_where('comments', array('post_id' => $post_id));
+		//retrieves comments from db
+		public function get_comments($ticket_id){
+			$query = $this->db->get_where('comments', array('ticket_id' => $ticket_id));
 			return $query->result_array();
 		}
 	}

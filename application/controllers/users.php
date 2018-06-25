@@ -56,7 +56,7 @@
 					//Set message
 					$this->session->set_flashdata('user_loggedin', 'You are now logged in');
 
-					redirect('posts');
+					redirect('tickets');
 				} else{
 					//Set message
 					$this->session->set_flashdata('login_failed', 'Login is invalid');
